@@ -1,5 +1,7 @@
 # kickstart.nvim
 
+Updated by elbiazo. Any update to this file will be marked with `ELB:`
+
 ## Introduction
 
 A starting point for Neovim that is:

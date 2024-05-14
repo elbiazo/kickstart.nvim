@@ -239,7 +239,18 @@ require('lazy').setup({
   --    require('Comment').setup({})
 
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim', opts = {} },
+
+  -- ELB: Commenting for different filetypes. Added ql
+  {
+    'numToStr/Comment.nvim',
+    opts = {},
+    config = function()
+      require('Comment').setup()
+      local ft = require 'Comment.ft'
+      ft.set('ql', { '//%s', '/*%s*/' })
+    end,
+  },
+  -- ELB: end of Comment.nvim
 
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`. This is equivalent to the following Lua:

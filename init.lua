@@ -624,6 +624,7 @@ require('lazy').setup({
         'pyright', -- ELB: Python LSP
         'flake8', -- ELB: Python Linter
         'black', -- ELB: Python Formatter
+        'codeql', -- ELB: CodeQL for security analysis
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

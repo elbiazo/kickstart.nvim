@@ -2,6 +2,14 @@
 
 Updated by elbiazo. Any update to this file will be marked with `ELB:`
 
+## ELB: Changes made to the original kickstart.nvim
+
+`gn`: Go to next tab
+`gp`: Go to prev teab
+`gt`: Create new tab
+
+`<Leader>n`: neotree for folder view
+
 ## Introduction
 
 A starting point for Neovim that is:

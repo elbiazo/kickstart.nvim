@@ -196,7 +196,6 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- ELB: Keybinds to make tabbing sane
 vim.keymap.set('n', 'gn', '<Cmd>tabnext<CR>', { desc = 'Move to the previous tab' })
 vim.keymap.set('n', 'gp', '<Cmd>tabprevious<CR>', { desc = 'Move to the next tab' })
-vim.keymap.set('n', 'gt', '<Cmd>tabnew<CR>', { desc = 'Move to the previous tab' })
 
 -- ELB: keybind neotree toggle like vscode
 vim.keymap.set('n', '<C-b>', '<Cmd>Neotree toggle<CR>', { desc = 'Toggle neotree' })

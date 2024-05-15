@@ -6,7 +6,6 @@ Updated by elbiazo. Any update to this file will be marked with `ELB:`
 
 `gn`: Go to next tab
 `gp`: Go to prev teab
-`gt`: Create new tab
 
 `<Leader>-n`: neotree for folder view
 `<C-b>`: toggle neotree folder view

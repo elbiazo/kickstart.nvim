@@ -961,6 +961,17 @@ require('lazy').setup({
   -- NOTE: Next step on your Neovim journey: Add/Configure additional plugins for Kickstart
   'github/copilot.vim', -- ELB: Adding copilot
 
+  -- ELB: Adding marks
+  {
+    'chentoast/marks.nvim',
+    config = function()
+      require('marks').setup {
+        default_mappings = true,
+      }
+    end,
+  },
+  -- end of marks
+
   -- ELB: Adding nvim-tree
   {
     'nvim-neo-tree/neo-tree.nvim',

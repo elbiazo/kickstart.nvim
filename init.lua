@@ -523,7 +523,8 @@ require('lazy').setup({
 
           -- Execute a code action, usually your cursor needs to be on top of an error
           -- or a suggestion from your LSP for this to activate.
-          map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
+          -- map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
+          map('<leader>c', vim.lsp.buf.code_action, '[C]ode Action') -- ELB: Change code action to just c
 
           -- Opens a popup that displays documentation about the word under your cursor
           --  See `:help K` for why this keymap.
@@ -671,10 +672,6 @@ require('lazy').setup({
         'stylua', -- Used to format Lua code
         'rust-analyzer', -- ELB: Used for Rust
         'clangd', -- ELB: Used for c/c++
-        'pyright', -- ELB: Python LSP
-        'flake8', -- ELB: Python Linter
-        'black', -- ELB: Python Formatter
-        'codeql', -- ELB: CodeQL for security analysis
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

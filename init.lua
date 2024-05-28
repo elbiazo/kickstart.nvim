@@ -200,9 +200,6 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.keymap.set('n', 'gn', '<Cmd>tabnext<CR>', { desc = 'Move to the previous tab' })
 vim.keymap.set('n', 'gp', '<Cmd>tabprevious<CR>', { desc = 'Move to the next tab' })
 
--- ELB: keybind neotree toggle like vscode
-vim.keymap.set('n', '<C-t>', '<Cmd>Neotree toggle<CR>', { desc = 'Toggle neotree' })
-
 -- ELB: end of Keybinds
 
 -- [[ Basic Autocommands ]]
@@ -1009,9 +1006,11 @@ require('lazy').setup({
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
     },
     config = function()
-      vim.keymap.set('n', '<leader>n', function()
-        vim.cmd 'Neotree'
-      end, { desc = '[N]eotree' })
+      -- vim.keymap.set('n', '<leader>n', function()
+      --   vim.cmd 'Neotree'
+      -- end, { desc = '[N]eotree' })
+      -- ELB: keybind neotree toggle like vscode
+      vim.keymap.set('n', '<C-t>', '<Cmd>Neotree toggle<CR>', { desc = 'Toggle neotree' })
     end,
   },
   -- ELB: end of adding nvim-tree

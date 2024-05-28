@@ -201,7 +201,7 @@ vim.keymap.set('n', 'gn', '<Cmd>tabnext<CR>', { desc = 'Move to the previous tab
 vim.keymap.set('n', 'gp', '<Cmd>tabprevious<CR>', { desc = 'Move to the next tab' })
 
 -- ELB: keybind neotree toggle like vscode
-vim.keymap.set('n', '<C-b>', '<Cmd>Neotree toggle<CR>', { desc = 'Toggle neotree' })
+vim.keymap.set('n', '<C-t>', '<Cmd>Neotree toggle<CR>', { desc = 'Toggle neotree' })
 
 -- ELB: end of Keybinds
 
@@ -562,8 +562,7 @@ require('lazy').setup({
 
           -- Execute a code action, usually your cursor needs to be on top of an error
           -- or a suggestion from your LSP for this to activate.
-          -- map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
-          map('<leader>c', vim.lsp.buf.code_action, '[C]ode Action') -- ELB: Change code action to just c
+          map('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
 
           -- Opens a popup that displays documentation about the word under your cursor
           --  See `:help K` for why this keymap.

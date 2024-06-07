@@ -157,6 +157,9 @@ vim.opt.scrolloff = 10
 
 -- ELB: Set tabstop as 4 spaces
 vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.cindent = true
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`

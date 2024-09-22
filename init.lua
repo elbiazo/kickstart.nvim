@@ -547,11 +547,15 @@ require('lazy').setup({
 
           -- Fuzzy find all the symbols in your current document.
           --  Symbols are things like variables, functions, types, etc.
-          map('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
+          map('<leader>so', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
 
+          -- ELB: removing lsp_dynamic_workspace_symbols. it is like lsp_document_symbols but for all open files
           -- Fuzzy find all the symbols in your current workspace.
           --  Similar to document symbols, except searches over your entire project.
-          map('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
+          -- map('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
+
+          -- ELB: Adding global symbol search like <C-T> from vscode or zed
+          map('<leader>st', require('telescope.builtin').lsp_workspace_symbols, '[W]orkspace [S]ymbols')
 
           -- Rename the variable under your cursor.
           --  Most Language Servers support renaming across files, etc.
@@ -1010,7 +1014,7 @@ require('lazy').setup({
       --   vim.cmd 'Neotree'
       -- end, { desc = '[N]eotree' })
       -- ELB: keybind neotree toggle like vscode
-      vim.keymap.set('n', '<C-t>', '<Cmd>Neotree toggle<CR>', { desc = 'Toggle neotree' })
+      vim.keymap.set('n', '<C-E>', '<Cmd>Neotree toggle<CR>', { desc = 'Toggle neotree' })
     end,
   },
   -- ELB: end of adding nvim-tree
